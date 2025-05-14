@@ -550,8 +550,7 @@ section {
 }
 
 .home-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../imgs/2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../imgs/2.jpg);
   width: 100%;
   background-size: cover;
   background-position: center;
