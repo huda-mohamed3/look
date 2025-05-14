@@ -8,14 +8,14 @@ var animation = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: './imgAnim1.json' 
+  path: 'json/imgAnim1.json' 
 });
 var animation = lottie.loadAnimation({
 container: document.getElementById('sidebarAnimation'),
 renderer: 'svg',
 loop: true,
 autoplay: true,
-path: '../Animation3.json' 
+path: 'json/Animation3.json' 
 });
 
 
