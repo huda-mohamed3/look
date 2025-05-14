@@ -321,7 +321,7 @@ scrollBtn.onclick=function(){
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: '../json/Animation3.json' 
+          path: 'json/Animation3.json' 
       });
 
 AOS.init({
