@@ -363,13 +363,11 @@ header ul {
   margin-right: 5px;
 
 }
-.home .social-links i:hover{
+
+.home .social-links li:not(.soocialNot) i:hover{
   scale: 1.2;
   color: #f2860d;
-
-
 }
-
 header .social-links i:hover{
   scale: 1.2;
   color:#95c7e1;
@@ -446,8 +444,10 @@ section {
   
 }
 
+
 .sidebar a.active-section {
-  color: #bce8ff;
+      color: #69c6f6;
+    text-shadow: 1px 0.5px 0px rgb(255 255 255);
 }
 
 /* *****************  **************************/
@@ -514,8 +514,10 @@ section {
   color: #bce8ff;
 
 }
+
 .sidebar a:hover i {
-  color: rgb(222 241 251);
+    color: rgb(222 241 251);
+    scale: 1.2;
 }
  .sidebar ul {
    display: flex;
