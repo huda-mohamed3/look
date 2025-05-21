@@ -368,6 +368,10 @@ header ul {
   scale: 1.2;
   color: #f2860d;
 }
+.home header .social-links i:hover{
+  color: #f2860d;
+}
+
 header .social-links i:hover{
   scale: 1.2;
   color:#95c7e1;
