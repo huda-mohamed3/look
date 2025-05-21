@@ -332,7 +332,8 @@ AOS.init({
 // **********************************************// active / scroll******************************************************
 
 const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".links a, .sidebar a");
+const navLinks = document.querySelectorAll('.sidebar a[href^="#"]'); // Only anchors that are internal links
+
 
 function onScroll() {
   let scrollY = window.pageYOffset;
@@ -353,13 +354,18 @@ function onScroll() {
   });
 }
 
+
+
 window.addEventListener("scroll", onScroll);
+
 navLinks.forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
 
     const targetId = this.getAttribute("href").slice(1);
     const targetSection = document.getElementById(targetId);
+
+    if (!targetSection) return; // prevent error if target section doesn't exist
 
     const offset = 200; // height of your fixed header
     const top = targetSection.offsetTop - offset;
@@ -369,8 +375,6 @@ navLinks.forEach(link => {
       behavior: "smooth"
     });
 
-    setTimeout(() => onScroll(), 300); // optional: update active state
+    setTimeout(() => onScroll(), 300);
   });
 });
-
-
